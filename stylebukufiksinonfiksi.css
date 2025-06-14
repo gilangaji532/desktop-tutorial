@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Menu Buku</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: gray;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: gray;
+      padding: 20px;
+      text-align: center;
+      color: white;
+    }
+
+    nav {
+      background-color: blue;
+    }
+
+    .menu {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .menu li {
+      position: relative;
+    }
+
+    .menu > li {
+      margin: 0 15px;
+    }
+
+    .menu a {
+      display: block;
+      padding: 14px 20px;
+      color: white;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+
+    .menu a:hover {
+      background-color: #555;
+    }
+
+    /* Dropdown */
+    .submenu {
+      display: none;
+      position: absolute;
+      top: 48px;
+      left: 0;
+      background-color: #444;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      min-width: 160px;
+      z-index: 1000;
+    }
+
+    .submenu li a {
+      padding: 10px 16px;
+      color: #fff;
+    }
+
+    .menu li:hover .submenu {
+      display: block;
+    }
+
+    main {
+      padding: 30px;
+      text-align: center;
+    }
+
+    h2 {
+      color: #333;
+    }
+  </style>
+</head>
+<body>
